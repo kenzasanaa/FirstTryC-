@@ -1,0 +1,44 @@
+this is the first excercice i had 
+``` 
+A, B are entered, which are perceived as the sides of the postcard, specified in mm.
+
+X, Y are entered, which are perceived as the sides of the envelope, given in mm.
+
+Check if the postcard can be put into an envelope
+```
+
+how did i solve it ? 
+
+for me i like to read documentatoins so i readed the basics from W3School to lean the syntaxe on how to declare a variable and read it extt..
+and then i analysed the problem and writed my own solutoin and of course i had alot of errors, but how did i solve it ? 
+
+for me ai bots are my privet teachers, i use black ai box, i shared my code and ask for correcting my code and to explain 
+in details on what is the problem and how to correct it, so i can understand in depth and learn from my mistakes.
+
+```
+
+int main()
+{
+    
+    
+    std::cout << "enter the sides of the postcard (A and B in mm):";
+    int A, B;
+    std::cin >> A >> B;
+
+    std::cout << "enter the sides of the envelope (X and Y in mm):";
+    int X, Y;
+    std::cin >> X >> Y;
+
+    if (A < 0 || B < 0 || X < 0 || Y < 0) {
+        std::cout << "Invalid input. Please enter non-negative values." << std::endl;
+        return 1;
+    }
+    
+    if (A <= X && B <= Y || A <= Y && B <= X) {
+        std::cout << "The postcard will fit into the envelope." << std::endl;
+    }
+    else {
+        std::cout << "The postcard won't fit into the envelope." << std::endl;
+    }
+}
+```
